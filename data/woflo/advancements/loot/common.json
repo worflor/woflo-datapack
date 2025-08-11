@@ -1,0 +1,14 @@
+{
+  "display": {
+    "icon": { "id": "minecraft:bundle" },
+    "title": { "text": "Loot pack", "italic": false },
+    "description": { "text": "Common", "italic": false },
+    "announce_to_chat": false,
+    "show_toast": true,
+    "frame": "task",
+    "hidden": true
+  },
+  "criteria": {
+    "impossible": { "trigger": "minecraft:impossible" }
+  }
+}

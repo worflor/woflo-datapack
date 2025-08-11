@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    { "rolls": 20, "entries": [ { "type": "minecraft:loot_table", "name": "woflo:bundles/common_hostile_source" } ] },
+    { "rolls": { "type": "minecraft:uniform", "min": 0, "max": 10 }, "entries": [ { "type": "minecraft:loot_table", "name": "woflo:bundles/common_hostile_source" } ] }
+  ]
+}
