@@ -8,5 +8,5 @@ data modify entity @p[distance=..2,limit=1,sort=nearest] SelectedItem set from e
 kill @s
 
 # If player is not on cooldown, route as a wand use
-execute as @p[distance=..2,limit=1,sort=nearest] if score @s woflo_exp.wand_cooldown matches 0 run function woflo-experimental:wand_use_router
+execute as @p[distance=..2,limit=1,sort=nearest] if score @s wand_cd matches 0 run function woflo-experimental:wand_use_router
 

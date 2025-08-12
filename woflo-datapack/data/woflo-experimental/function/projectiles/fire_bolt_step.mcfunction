@@ -18,8 +18,8 @@ execute as @e[type=marker,tag=woflo_exp.fire_bolt] at @s as @e[type=!player,dist
 execute as @e[type=marker,tag=woflo_exp.fire_bolt] at @s if entity @e[type=!player,distance=..1.5,limit=1,sort=nearest] run kill @s
 
 # Lifespan decrement; remove when zero
-scoreboard players remove @e[type=marker,tag=woflo_exp.fire_bolt,scores={woflo_exp.fire_bolt_life=1..}] woflo_exp.fire_bolt_life 1
-kill @e[type=marker,tag=woflo_exp.fire_bolt,scores={woflo_exp.fire_bolt_life=0}]
+scoreboard players remove @e[type=marker,tag=woflo_exp.fire_bolt,scores={firebolt=1..}] firebolt 1
+kill @e[type=marker,tag=woflo_exp.fire_bolt,scores={firebolt=0}]
 
 # Reschedule if any remain
 execute if entity @e[type=marker,tag=woflo_exp.fire_bolt] run schedule function woflo-experimental:projectiles/fire_bolt_step 1t replace

@@ -2,15 +2,15 @@
 tellraw @a {"text":"[Woflo Experimental] Magic Wand system loaded!","color":"light_purple"}
 
 # Initialize scoreboards
-scoreboard objectives add woflo_exp.wand_cooldown dummy
-scoreboard objectives add woflo_exp.sneak_time dummy
-scoreboard objectives add woflo_exp.fire_bolt_life dummy
-scoreboard objectives add woflo_exp.right_click minecraft.used:minecraft.carrot_on_a_stick
+scoreboard objectives add wand_cd dummy
+scoreboard objectives add sneak dummy
+scoreboard objectives add firebolt dummy
+scoreboard objectives add rclick minecraft.used:minecraft.carrot_on_a_stick
 
-# Clear any existing wand cooldowns
-scoreboard players reset @a woflo_exp.wand_cooldown
-scoreboard players reset @a woflo_exp.sneak_time
-scoreboard players reset @a woflo_exp.right_click
+# Clear any existing scores
+scoreboard players reset @a wand_cd
+scoreboard players reset @a sneak
+scoreboard players reset @a rclick
 
 tellraw @a {"text":"[EXP] Use a wand and look for actionbar debug","color":"yellow"}
 

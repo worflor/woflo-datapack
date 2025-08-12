@@ -7,4 +7,4 @@ playsound minecraft:block.grass.break player @a ~ ~ ~ 1 1.5
 title @s actionbar {"text":"Nature: Renew!","color":"green"}
 
 # Cooldown
-scoreboard players set @s woflo_exp.wand_cooldown 20
+scoreboard players set @s wand_cd 20

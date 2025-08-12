@@ -3,8 +3,8 @@
 advancement revoke @s only woflo-experimental:wand_attack
 
 # Cooldown gate
-execute if score @s woflo_exp.wand_cooldown matches 1.. run tellraw @s {"text":"Ability on cooldown...","color":"red"}
-execute if score @s woflo_exp.wand_cooldown matches 1.. run return
+execute if score @s wand_cd matches 1.. run tellraw @s {"text":"Ability on cooldown...","color":"red"}
+execute if score @s wand_cd matches 1.. run return
 
 # Identify the struck target by selecting the closest non-player entity within melee reach
 tag @e[tag=woflo_exp.wand_target] remove woflo_exp.wand_target
@@ -21,5 +21,5 @@ execute if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{wof
 schedule function woflo-experimental:wand_cleanup_target 1t replace
 
 # Short attack cooldown
-scoreboard players set @s woflo_exp.wand_cooldown 6
+scoreboard players set @s wand_cd 6
 

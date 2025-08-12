@@ -16,4 +16,4 @@ playsound minecraft:entity.player.levelup player @s ~ ~ ~ 0.5 1.5
 tellraw @s {"text":"✨ Your stick has been transformed into a Magic Wand! ✨","color":"light_purple"}
 
 # Set cooldown (100 ticks = 5 seconds)
-scoreboard players set @s woflo_exp.wand_cooldown 100
+scoreboard players set @s wand_cd 100

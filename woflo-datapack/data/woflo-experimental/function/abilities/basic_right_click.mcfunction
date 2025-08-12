@@ -14,4 +14,4 @@ playsound minecraft:block.amethyst_block.chime player @a ~ ~ ~ 1 1.5
 title @s actionbar {"text":"Basic: Magic Bolt!","color":"light_purple"}
 
 # Cooldown for basic right-click
-scoreboard players set @s woflo_exp.wand_cooldown 20
+scoreboard players set @s wand_cd 20

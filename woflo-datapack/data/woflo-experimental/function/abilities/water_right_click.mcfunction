@@ -5,4 +5,4 @@ particle minecraft:bubble ~ ~ ~ 0.4 0.4 0.4 0.1 15
 playsound minecraft:block.water.ambient player @a ~ ~ ~ 0.8 1.25
 
 # Cooldown
-scoreboard players set @s woflo_exp.wand_cooldown 30
+scoreboard players set @s wand_cd 30
