@@ -1,5 +1,0 @@
-{
-  "type": "minecraft:generic",
-  "pools": [
-    { "rolls": 1, "entries": [ { "type": "minecraft:item", "name": "minecraft:bundle", "functions": [ { "function": "minecraft:set_name", "name": { "text": "Loot pack", "color": "aqua", "italic": false } }, { "function": "minecraft:set_lore", "lore": [ { "text": "Epic (Jackpot)", "color": "aqua", "italic": false }, { "text": "Hostile bundle", "color": "gray", "italic": false } ] }, { "function": "minecraft:set_contents", "entries": [ { "type": "minecraft:loot_table", "name": "woflo:bundles/epic_hostile_source_heavy" } ] } ] } ] }
-}

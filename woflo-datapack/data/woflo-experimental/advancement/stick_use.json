@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "used_stick": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:stick"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "woflo-experimental:try_transform_wand"
+  }
+}

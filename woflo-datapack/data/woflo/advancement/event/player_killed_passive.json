@@ -1,0 +1,11 @@
+{
+  "criteria": {
+    "kill_passive": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": { "type": "#woflo:passive" }
+      }
+    }
+  },
+  "rewards": { "function": "woflo:on_kill_passive" }
+}

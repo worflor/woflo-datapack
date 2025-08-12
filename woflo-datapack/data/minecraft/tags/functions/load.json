@@ -1,5 +1,6 @@
 {
   "values": [
-    "woflo:load"
+    "woflo:load",
+    "woflo-experimental:load"
   ]
 } 

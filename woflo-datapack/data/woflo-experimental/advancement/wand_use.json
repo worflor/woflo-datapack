@@ -1,0 +1,11 @@
+{
+  "criteria": {
+    "use_on_block": { "trigger": "minecraft:item_used_on_block", "conditions": { "item": { "items": "minecraft:carrot_on_a_stick" } } },
+    "use_item": { "trigger": "minecraft:using_item", "conditions": { "item": { "items": "minecraft:carrot_on_a_stick" } } }
+  },
+  "requirements": [["use_on_block", "use_item"]],
+  "rewards": {
+    "function": "woflo-experimental:wand_use_router"
+  }
+}
+

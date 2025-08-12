@@ -1,0 +1,24 @@
+{
+  "criteria": {
+    "wand_attack": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "mainhand": {
+              "items": "minecraft:carrot_on_a_stick",
+              "components": {
+                "minecraft:custom_data": {
+                  "woflo_magic_wand": 1
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "woflo-experimental:attack_router"
+  }
+}

@@ -1,7 +1,0 @@
-{
-  "type": "minecraft:generic",
-  "pools": [
-    { "rolls": 10, "entries": [ { "type": "minecraft:loot_table", "name": "woflo:bundles/legendary_hostile_source" } ] },
-    { "rolls": { "type": "minecraft:uniform", "min": 0, "max": 5 }, "entries": [ { "type": "minecraft:loot_table", "name": "woflo:bundles/legendary_hostile_source" } ] }
-  ]
-}
