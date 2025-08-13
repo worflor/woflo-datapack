@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "place_snow_block": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "block": "minecraft:snow_block",
+        "item": {
+          "items": ["minecraft:snow_block"],
+          "components": {
+            "minecraft:custom_data": {
+              "relic": "ice"
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "relic:effects/ice/ice_block_placed"
+  }
+}

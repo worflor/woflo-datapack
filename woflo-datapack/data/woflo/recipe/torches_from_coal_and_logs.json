@@ -1,0 +1,5 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": ["minecraft:coal", "#minecraft:logs"],
+  "result": { "id": "minecraft:torch", "count": 16 }
+}

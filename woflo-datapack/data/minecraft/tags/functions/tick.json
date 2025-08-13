@@ -1,6 +1,6 @@
 {
   "values": [
-    "woflo:tick",
+    "woflo:core/tick",
     "woflo-experimental:tick"
   ]
 } 

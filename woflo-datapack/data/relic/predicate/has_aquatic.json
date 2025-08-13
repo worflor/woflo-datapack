@@ -1,0 +1,9 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "nbt": "{Inventory:[{id:\"minecraft:heart_of_the_sea\",components:{\"minecraft:custom_data\":{relic:\"aquatic\"}}}]}"
+  }
+}
+
+

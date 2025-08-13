@@ -11,16 +11,25 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_name": { "text": "Loot pack", "color": "aqua", "italic": false },
+                "minecraft:custom_name": "{\"text\":\"Loot pack\",\"color\":\"blue\",\"italic\":false}",
                 "minecraft:lore": [
-                  { "text": "Epic", "color": "aqua", "italic": false },
-                  { "text": "Hostile bundle", "color": "gray", "italic": false }
+                  "{\"text\":\"Epic\",\"color\":\"blue\",\"italic\":false}",
+                  "{\"text\":\"Hostile bundle\",\"color\":\"gray\",\"italic\":false}"
                 ]
               }
-            }
-          ,
+            },
             { "function": "minecraft:set_contents", "component": "minecraft:container", "entries": [
-              { "type": "minecraft:loot_table", "value": "woflo:bundle/epic_hostile_source_lean" }
+              { "type": "minecraft:loot_table", "value": "woflo:bundle/epic_hostile_source_lean" },
+              { "type": "minecraft:item", "name": "minecraft:enchanted_book", "conditions": [ { "condition": "minecraft:random_chance", "chance": 0.3 } ], "functions": [ 
+                { "function": "minecraft:set_count", "count": 1 },
+                { "function": "minecraft:enchant_randomly" }
+              ] },
+              { "type": "minecraft:item", "name": "minecraft:elytra", "conditions": [ { "condition": "minecraft:random_chance", "chance": 0.05 } ], "functions": [ 
+                { "function": "minecraft:set_count", "count": 1 },
+                { "function": "minecraft:set_damage", "damage": { "type": "minecraft:uniform", "min": 0.1, "max": 0.8 } }
+              ] },
+              { "type": "minecraft:item", "name": "minecraft:shulker_shell", "conditions": [ { "condition": "minecraft:random_chance", "chance": 0.15 } ], "functions": [ { "function": "minecraft:set_count", "count": 1 } ] },
+              { "type": "minecraft:item", "name": "minecraft:phantom_membrane", "conditions": [ { "condition": "minecraft:random_chance", "chance": 0.12 } ], "functions": [ { "function": "minecraft:set_count", "count": { "type": "minecraft:uniform", "min": 1, "max": 2 } } ] }
             ] }
           ]
         }

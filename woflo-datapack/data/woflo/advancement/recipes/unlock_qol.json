@@ -1,0 +1,28 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "automatic": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "recipes": [
+      "woflo:sticks_from_logs",
+      "woflo:chests_from_logs",
+      "woflo:wool_to_string",
+      "woflo:quartz_block_uncraft",
+      "woflo:clay_block_uncraft",
+      "woflo:glowstone_uncraft",
+      "woflo:sandstone_uncraft",
+      "woflo:nether_wart_block_uncraft",
+      "woflo:dried_kelp_block_uncraft",
+      "woflo:honeycomb_block_uncraft",
+      "woflo:gravel_to_flint",
+      "woflo:rotten_flesh_to_leather",
+      "woflo:torches_from_coal_and_logs",
+      "woflo:bundle_from_hides",
+      "woflo:name_tag",
+      "woflo:enchanted_golden_apple"
+    ]
+  }
+}

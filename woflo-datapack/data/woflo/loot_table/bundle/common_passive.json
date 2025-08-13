@@ -11,14 +11,13 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_name": { "text": "Loot pack", "color": "green", "italic": false },
+                "minecraft:custom_name": "{\"text\":\"Loot pack\",\"color\":\"green\",\"italic\":false}",
                 "minecraft:lore": [
-                  { "text": "Common", "color": "green", "italic": false },
-                  { "text": "Passive bundle", "color": "gray", "italic": false }
+                  "{\"text\":\"Common\",\"color\":\"green\",\"italic\":false}",
+                  "{\"text\":\"Passive bundle\",\"color\":\"gray\",\"italic\":false}"
                 ]
               }
-            }
-          ,
+            },
             { "function": "minecraft:set_contents", "component": "minecraft:container", "entries": [
               { "type": "minecraft:loot_table", "value": "woflo:bundle/common_passive_source_lean" },
               { "type": "minecraft:group", "children": [

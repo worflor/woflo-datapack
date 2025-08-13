@@ -11,20 +11,24 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_name": { "text": "Loot pack", "color": "aqua", "italic": false },
+                "minecraft:custom_name": "{\"text\":\"Loot pack\",\"color\":\"green\",\"italic\":false}",
                 "minecraft:lore": [
-                  { "text": "Epic", "color": "aqua", "italic": false },
-                  { "text": "Passive bundle", "color": "gray", "italic": false }
+                  "{\"text\":\"Epic\",\"color\":\"green\",\"italic\":false}",
+                  "{\"text\":\"Passive bundle\",\"color\":\"gray\",\"italic\":false}"
                 ]
               }
-            }
-          ,
+            },
             { "function": "minecraft:set_contents", "component": "minecraft:container", "entries": [
               { "type": "minecraft:loot_table", "value": "woflo:bundle/epic_passive_source_lean" },
               { "type": "minecraft:group", "children": [
                 { "type": "minecraft:item", "name": "minecraft:iron_ingot", "functions": [ { "function": "minecraft:set_count", "count": { "type": "minecraft:uniform", "min": 2, "max": 5 } } ] },
                 { "type": "minecraft:item", "name": "minecraft:emerald", "functions": [ { "function": "minecraft:set_count", "count": { "type": "minecraft:uniform", "min": 1, "max": 2 } } ] }
-              ] }
+              ] },
+              { "type": "minecraft:item", "name": "minecraft:goat_horn", "conditions": [ { "condition": "minecraft:random_chance", "chance": 0.4 } ], "functions": [ 
+                { "function": "minecraft:set_count", "count": 1 }
+              ] },
+              { "type": "minecraft:item", "name": "minecraft:music_disc_cat", "conditions": [ { "condition": "minecraft:random_chance", "chance": 0.15 } ], "functions": [ { "function": "minecraft:set_count", "count": 1 } ] },
+              { "type": "minecraft:item", "name": "minecraft:saddle", "conditions": [ { "condition": "minecraft:random_chance", "chance": 0.25 } ], "functions": [ { "function": "minecraft:set_count", "count": 1 } ] }
             ] }
           ]
         }

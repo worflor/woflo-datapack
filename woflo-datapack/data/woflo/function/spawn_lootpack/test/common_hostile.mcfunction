@@ -1,0 +1,4 @@
+# Test function - spawn common hostile loot with full effects
+tag @s remove woflo.pool_passive
+tag @s remove woflo.jackpot
+function woflo:spawn_lootpack/common

@@ -30,6 +30,8 @@
     "minecraft:piglin_brute",
     "minecraft:wither_skeleton",
     "minecraft:silverfish",
-    "minecraft:endermite"
+    "minecraft:endermite",
+    "minecraft:breeze",
+    "minecraft:bogged"
   ]
 }

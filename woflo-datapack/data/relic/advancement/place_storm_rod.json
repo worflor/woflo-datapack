@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "place_lightning_rod": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "block": "minecraft:lightning_rod",
+        "item": {
+          "items": ["minecraft:lightning_rod"],
+          "components": {
+            "minecraft:custom_data": {
+              "relic": "storm"
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "relic:effects/storm/storm_rod_placed"
+  }
+}

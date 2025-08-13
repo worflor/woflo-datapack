@@ -1,0 +1,9 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "nbt": "{Inventory:[{id:\"minecraft:elytra\",components:{\"minecraft:custom_data\":{relic:\"ethereal\"}}}]}"
+  }
+}
+
+

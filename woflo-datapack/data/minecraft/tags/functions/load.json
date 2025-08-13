@@ -1,6 +1,6 @@
 {
   "values": [
-    "woflo:load",
-    "woflo-experimental:load"
+    "woflo:core/load",
+    "relic:core/load"
   ]
-} 
+}
